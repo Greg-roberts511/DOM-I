@@ -47,14 +47,14 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // nav bar
-let nav1 = document.querySelector(".nav a");
-nav1[0].textContent = siteContent["nav"]["nav-item-1"];
+let nav1 = document.querySelector("nav a");
+nav1.textContent = siteContent["nav"]["nav-item-1"];
 
 // let nav2 = document.querySelector("nav a");
 // nav2[1].textContent = `${siteContent["nav"]["nav-item-2"]}`;
 
 // cta section
-let ctaImg = document.getElementById(".cta-img");
+let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 let ctaText = document.querySelector(".cta-text h1");
