@@ -47,11 +47,10 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // nav bar
-let nav1 = document.querySelector("nav a");
-nav1.textContent = siteContent["nav"]["nav-item-1"];
-
-// let nav2 = document.querySelector("nav a");
-// nav2[1].textContent = `${siteContent["nav"]["nav-item-2"]}`;
+let navBar = document.querySelectorAll("nav a");
+navBar.forEach((e, i) => {
+  e.textContent = siteContent["nav"][`nav-item-${i + 1}`];
+});
 
 // cta section
 let ctaImg = document.getElementById("cta-img");
