@@ -146,6 +146,7 @@ let pizza = document.querySelector("nav");
 
 newNav = document.createElement("a");
 newNav.textContent = "pizza code";
+newNav.alt = "uhhhh is a pizza link";
 newNav.style.color = "green";
 
 pizza.prepend(newNav);
@@ -154,6 +155,7 @@ let catto = document.querySelector("nav");
 
 newNav2 = document.createElement("a");
 newNav2.textContent = "catto";
+newNav2.alt = "cat link";
 newNav2.style.color = "green";
 
 catto.appendChild(newNav2);
