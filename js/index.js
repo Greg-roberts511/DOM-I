@@ -58,3 +58,7 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 let ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = siteContent["cta"]["h1"];
+ctaText.style.textAlign = "center";
+
+let ctaBt = document.querySelector(".cta-text button");
+ctaBt.textContent = siteContent["cta"]["button"];
