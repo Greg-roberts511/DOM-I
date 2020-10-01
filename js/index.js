@@ -47,8 +47,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 //nav bar
-let navBar = document.querySelectorAll("nav a");
-navBar.forEach((e, i) => {
+let nav = document.querySelectorAll("nav a");
+nav.forEach((e, i) => {
   e.textContent = siteContent["nav"][`nav-item-${i + 1}`];
 });
 
@@ -132,6 +132,28 @@ phoneNum.textContent = siteContent["contact"]["phone"];
 let email = conText[2];
 email.textContent = siteContent["contact"]["email"];
 
-//footer
+//footer section
 let footText = document.querySelector("footer p");
 footText.textContent = siteContent["footer"]["copyright"];
+
+//style changes
+let navColor = document.querySelectorAll("nav a");
+navColor.forEach((i) => {
+  i.style.color = "green";
+});
+//new nav
+let pizza = document.querySelector("nav");
+
+newNav = document.createElement("a");
+newNav.textContent = "pizza code";
+newNav.style.color = "green";
+
+pizza.prepend(newNav);
+
+let catto = document.querySelector("nav");
+
+newNav2 = document.createElement("a");
+newNav2.textContent = "catto";
+newNav2.style.color = "green";
+
+catto.appendChild(newNav2);
