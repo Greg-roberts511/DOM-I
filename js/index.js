@@ -65,13 +65,13 @@ ctaBt.textContent = siteContent["cta"]["button"];
 
 //main content section
 
-let head1 = document.querySelectorAll(".main-content h4");
+let h4Title = document.querySelectorAll(".main-content h4");
 
 let mainText = document.querySelectorAll(".main-content p");
 
 //features
 
-let fTitle = head1[0];
+let fTitle = h4Title[0];
 
 fTitle.textContent = siteContent["main-content"]["features-h4"];
 
@@ -80,7 +80,7 @@ let fText = mainText[0];
 fText.textContent = siteContent["main-content"]["features-content"];
 
 // about
-let aTitle = head1[1];
+let aTitle = h4Title[1];
 
 aTitle.textContent = siteContent["main-content"]["about-h4"];
 
@@ -94,21 +94,21 @@ midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 //bottom content
 //serviecs
-let servTitle = head1[2];
+let servTitle = h4Title[2];
 servTitle.textContent = siteContent["main-content"]["services-h4"];
 
 let servText = mainText[2];
 servText.textContent = siteContent["main-content"]["services-content"];
 
 //product
-let prodTitle = head1[3];
+let prodTitle = h4Title[3];
 prodTitle.textContent = siteContent["main-content"]["product-h4"];
 
 let prodText = mainText[3];
 prodText.textContent = siteContent["main-content"]["product-content"];
 
 //vision
-let visTitle = head1[4];
+let visTitle = h4Title[4];
 visTitle.textContent = siteContent["main-content"]["vision-h4"];
 
 let visText = mainText[4];
