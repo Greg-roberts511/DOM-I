@@ -46,7 +46,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-// nav bar
+//nav bar
 let navBar = document.querySelectorAll("nav a");
 navBar.forEach((e, i) => {
   e.textContent = siteContent["nav"][`nav-item-${i + 1}`];
@@ -110,3 +110,28 @@ prodText.textContent = siteContent["main-content"]["product-content"];
 //vision
 let visTitle = head1[4];
 visTitle.textContent = siteContent["main-content"]["vision-h4"];
+
+let visText = mainText[4];
+visText.textContent = siteContent["main-content"]["vision-content"];
+
+//contact section
+let conTitle = document.querySelector(".contact h4");
+conTitle.textContent = siteContent["contact"]["contact-h4"];
+
+let conText = document.querySelectorAll(".contact p");
+
+//address
+let address = conText[0];
+address.textContent = siteContent["contact"]["address"];
+
+//phone
+let phoneNum = conText[1];
+phoneNum.textContent = siteContent["contact"]["phone"];
+
+//email
+let email = conText[2];
+email.textContent = siteContent["contact"]["email"];
+
+//footer
+let footText = document.querySelector("footer p");
+footText.textContent = siteContent["footer"]["copyright"];
